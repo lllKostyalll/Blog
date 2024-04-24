@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root {
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+.header {
+	min-height:100px;
+	background:#5200FF;
+	display:flex;
+	align-items:center;
+}
+
+.inner {
+	/*margin:auto;*/
+	
+	padding-left:167px;
+}
+
+.main {
+	background:#242424;
+	/*margin:auto;*/
+	display:flex;
+	flex:auto;
+	color:#FFFFFF;
+}
+
+/*For ArticlePage*/
+.article_page_container{
+	padding-top:5em;
+	display:flex;
+	justify-content:space-between;
+	/*min-width:100vh;*/
+	margin:auto;
+	min-height:100vh;
+}
+
+.article_page_image{
+	min-width:20em;
+	min-height:20em;
+}
+
+.article_page_text_container{
+	display:flex;
+	flex-direction:column;
+}
+
+/*End For ArticlePage*/
+
+
+/*For PageWithArticle*/
+.article_gallery{
+	/*margin:auto;*/
+	min-width:100vh;
+	display:grid;
+	/*grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));*/
+	grid-template-columns: repeat(auto-fill, minmax(20em, 6fr));
+	grid-gap: 1em;
+	padding: 1em;
+	/*	
+	grid-gap: 10px;
+	padding: 10px;
+	*/
+}
+/*End For PageWithArticle*/
+
+.footer {
+	min-height:100px;
+	background:#5200FF;
+	color:#FFFFFF;
+	font-size:48px;
+	/*margin:auto;*/
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	/*text-align:center;*/
+	
+}
